@@ -1,0 +1,49 @@
+.footer-top {
+  background: #000045;
+  color: #ffffff;
+  padding: 50px 0;
+
+  p {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      color: #fc4e44;
+      transition: all 0.5s ease;
+    }
+  }
+  i {
+    padding-right: 0.5rem;
+  }
+}
+.footer-bottom {
+  background: #3a3a4c;
+  color: #ffffff;
+  padding: 0.5rem;
+  .copy-right {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .u-logo {
+    display: inline-block;
+    vertical-align: middle;
+    img {
+      height: 25px;
+    }
+  }
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,12 @@
+<?php include 'header.php';?>
+<?php include 'banner.php';?>
+<?php include 'about-us.php';?>
+<?php include 'services.php';?>
+<?php include 'destination.php';?>
+<?php include 'classes.php';?>
+<?php include 'events.php';?>
+<?php include 'partner-uni.php';?>
+<?php include 'news.php';?>
+<?php include 'testomonial.php';?>
+<?php include 'content-contact.php';?>
+<?php include 'footer.php';?>

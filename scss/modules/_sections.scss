@@ -1,0 +1,290 @@
+.about-content {
+  padding: 0 6rem;
+
+  p {
+    color: #525558;
+    font-size: 1.125rem;
+    line-height: 1.4em;
+  }
+}
+
+// slanted edges here
+.quote {
+  background: #000045;
+  position: relative;
+  z-index: 1;
+
+  &:before,
+  &:after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
+    backface-visibility: hidden;
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(1.5deg);
+    transform-origin: 100% 0;
+  }
+
+  &:after {
+    bottom: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+  }
+}
+
+.quote {
+  color: #fff;
+  padding: 3rem;
+}
+
+.services-item-holder {
+  box-shadow: 0 0 3px 0 #4e4e4e;
+  border-radius: 1rem;
+  background: #fff;
+  color: #525558;
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  a {
+    color: #525558;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-blue;
+    }
+  }
+}
+
+.services-icon-holder {
+  width: 5rem;
+  margin: 0 auto;
+  height: 5rem;
+  background: $primary-blue;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+
+  a {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.destination-cnt-holder {
+  .destination-desc {
+    background: $primary-blue;
+    color: #ffffff;
+    box-shadow: 0 0 8px 0 #4e4e4e;
+    padding: 0.5rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .destination-img img {
+    min-height: 230px;
+    max-height: 230px;
+    overflow: hidden;
+  }
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.destination-img {
+  position: relative;
+}
+
+.destination-img:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text-overlay {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.test-cont {
+  position: relative;
+  background: url(../images/test.jpg);
+  background-size: cover;
+  color: #ffffff;
+  background-attachment: fixed;
+}
+
+.test-cont:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  background-repeat: repeat;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.events {
+  background: #f7f7f7;
+}
+
+.events-box {
+  background: #ffffff;
+  box-shadow: 0 0 8px 0 #4e4e4e;
+  margin-bottom: 2rem;
+}
+
+.event-img {
+  position: relative;
+}
+
+.event-image img {
+  min-height: 230px;
+  max-height: 230px;
+  min-width: 100%;
+}
+
+.event-date {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background: #15059ccf;
+  box-shadow: 0 0 8px 0 #4e4e4e;
+  color: #ffffff;
+  padding: 1rem 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.partners-uni-holder {
+  border: 1px solid #525558;
+}
+
+.partners-uni-holder {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.uni-logo-thumb {
+  transition: transform 0.2s;
+}
+
+.uni-logo-thumb:hover {
+  transform: scale(1.1);
+}
+
+.uni-logo-thumb img {
+  width: 100%;
+  height: auto;
+  min-height: 130px;
+  max-height: 130px;
+}
+
+.news {
+  background: #f7f7f7;
+}
+
+.news-holder {
+  margin-bottom: 2rem;
+}
+
+.news-image-holder {
+  display: table-cell;
+}
+
+.news-desc-holder {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 1rem;
+}
+
+.news-holder img {
+  min-height: 235px;
+  max-height: 235px;
+}
+
+.testomonial {
+
+  background-image: url('../images/testo-bg.jpg');
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.testomonial:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.testomonial-cont img {
+
+  width: 8rem !important;
+  height: 8rem;
+  margin: 0 auto;
+  border-radius: 8rem;
+  box-shadow: 0 0 8px 0 #4e4e4e;
+  padding: 3px;
+}
+
+.cust-card {
+  padding-top: 1rem;
+  margin-bottom: 2rem !important;
+}
+
+.connect-form select {
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+}
+
+.connect-form{
+  .form-control {
+    @include border-radius(0);
+  }
+}

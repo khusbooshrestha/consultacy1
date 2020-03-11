@@ -1,0 +1,44 @@
+.btn-normal {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: $primary-blue;
+  border-radius: 0;
+  border: 1px solid $primary-blue;
+  color: #fff;
+  &:hover {
+    background: transparent;
+    color: $primary-blue;
+    transition: all 1s ease;
+  }
+}
+.btn-big {
+  padding: 0.5rem 4rem 0.5rem 4rem;
+  background: #0099e5;
+  border-radius: 0;
+  border: 1px solid #0099e5;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1rem;
+  &:hover {
+    color: #0099e5;
+    background: #fff;
+    transition: all 1s ease;
+  }
+}
+
+.scrollTop {
+  position: fixed;
+  right: 2%;
+  bottom: 10px;
+  background-color: rgba(0, 153, 229, 0.65);
+  padding: 14px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 500;
+  border-radius: 50px;
+}
+
+.scrollTop a {
+  font-size: 14px;
+  color: #fff;
+}

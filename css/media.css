@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .destination-cnt-holder 
+  .destination-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .about-content{
+      padding: 0;
+  }
+}
